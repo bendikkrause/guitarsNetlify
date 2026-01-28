@@ -1,4 +1,3 @@
-const { v4: uuidv4 } = require('uuid');
 const guitars = require('../guitarData.js');
 
 exports.handler = async (event) => {
@@ -13,6 +12,7 @@ exports.handler = async (event) => {
     }
 
     if (httpMethod === 'POST') {
+        const { v4: uuidv4 } = await import('uuid');
         const newGuitar = JSON.parse(body);
         newGuitar.id = uuidv4();
         guitars.push(newGuitar);
