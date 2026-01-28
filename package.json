@@ -1,0 +1,16 @@
+{
+  "name": "guitarsnetlify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "netlify-cli": "^23.13.5",
+    "uuid": "^13.0.0"
+  }
+}
